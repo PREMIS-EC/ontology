@@ -6,7 +6,7 @@
 @prefix evOutcome: <http://id.loc.gov/vocabulary/preservation/eventOutcome/> .
 @prefix evRelAgRole:  <http://id.loc.gov/vocabulary/preservation/eventRelatedAgentRole/> .
 @prefix evRelObjRole:  <http://id.loc.gov/vocabulary/preservation/eventRelatedObjectRole/> .
-@prefix evType: <http://id.loc.gov/vocabulary/preservation/environmentFunctionType/> .
+@prefix evType: <http://id.loc.gov/vocabulary/preservation/eventType/> .
 @prefix envchar:  <http://id.loc.gov/vocabulary/preservation/environmentCharacteristic/> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/>.
 @prefix premis: <http://www.loc.gov/premis/rdf/v3/> .
