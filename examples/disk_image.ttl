@@ -1,5 +1,4 @@
 @prefix crypHashFunc: <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/> .
-@prefix dce: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix ebucore: <https://www.ebu.ch/metadata/ontologies/ebucore#> .
 @prefix envFuncType: <http://id.loc.gov/vocabulary/preservation/environmentFunctionType/> .
@@ -47,7 +46,7 @@
 
 <powerbookG3> a envFuncType:har ;
   rdfs:label "Powerbook G3" ;
-  dce:creator <Apple_Computer> .
+  dct:creator <Apple_Computer> .
 
 #Representation of the original Rushdie environment (his personal Powerbook G3
 <rushdieOriginal> a premis:Representation ;
@@ -69,7 +68,7 @@
   premis:compositionLevel 0 ;
   dct:format <e01format> ;
   premis:size 2987000000 ;
-  dce:creator <ewfacquire> ;
+  dct:creator <ewfacquire> ;
   prov:generatedAtTime "2017-04-06T17:57:48.265Z" ;
   premis:fixity <rushdieEmulationFixity> ;
   relSubType:rep <rushdieEmulation> .
@@ -78,7 +77,7 @@
   rdfs:label "SheepShaver 2.3" ;
   premis:version "2.3" ;
   premis:documentation <https://github.com/cebix/macemu> ;
-  dce:rights <rightsBasis3> ;
+  dct:rights <rightsBasis3> ;
   relSubType:req <macosx> .
 
 <rightsBasis3> a premis:License ;
@@ -87,12 +86,12 @@
 <macosx> a envFuncType:ops ;
   rdfs:label "Mac OS X" ;
   premis:version "10.1" ;
-  dce:creator <Apple_Computer> ;
+  dct:creator <Apple_Computer> ;
   relSubType:idp <macbook2008> .
 
 <macbook2008> a envFuncType:har ;
   rdfs:label "MacBook2008" ;
-  dce:creator <Apple_Computer> . 
+  dct:creator <Apple_Computer> . 
 
 #Physical drive
 <G3HD> a premis:Representation ;
@@ -106,7 +105,7 @@
   dct:format <ddformat> ;
   premis:size 6100000000 ;
   premis:originalName "1000_PowerbookG3-2" ;
-  dce:creator <gnuddrescue119> ;
+  dct:creator <gnuddrescue119> ;
   prov:generatedAtTime "2017-04-06T17:57:48.265Z" ;
   prov:wasGeneratedBy <event1> ;
   prov:wasUsedBy <event2> ;
@@ -114,7 +113,7 @@
   relSubType:iso <diskImageE01> ;
   relSubType:hss <G3HD> ;
   premis:fixity <diskImagefixity> ;
-  dce:rights <rightsBasis1> ; 
+  dct:rights <rightsBasis1> ; 
   premis:rightsStatus [
     a premis:RightsStatus ;
     premis:startDate "2008-01-01" ;
@@ -124,7 +123,7 @@
     
 <diskImageDDFixity> a crypHashFunc:md5 ;
   rdf:value "35d3f6a6146cfbcea710f997cbec8674ce8f3789" ;
-  dce:creator <gnuddrescue119> .
+  dct:creator <gnuddrescue119> .
 
 #E01 Disk Image
 <diskImageE01> a premis:File ;
@@ -132,14 +131,14 @@
   dct:format <e01format> ;
   premis:size 6100000000 ;
   premis:originalName "1000_PowerbookG3-2" ;
-  dce:creator <ewfacquire> ;
+  dct:creator <ewfacquire> ;
   prov:wasGeneratedBy <event2> ;
   prov:wasUsedBy <event3>, <event4> ;
   premis:fixity <diskImageE01Fixity> ;
   relSubType:iso <stickynote> ;
   relSubType:hss <diskImageDD> ;
   relSubType:iem <rushdieEmulation> ;
-  dce:rights <rightsBasis1> ;
+  dct:rights <rightsBasis1> ;
   premis:rightsStatus [
     a premis:RightsStatus ;
     premis:startDate "2008-01-01" ;
@@ -201,7 +200,7 @@
     
 <stickynotefixity> a crypHashFunc:MD5 ;
   rdf:value "cbdbf45becb5c35m747d92603738fbc9" ;
-  dce:creator <Fedora> .
+  dct:creator <Fedora> .
 
 <text> a dct:FileFormat ;
   rdfs:label "Plain Text File" ;
